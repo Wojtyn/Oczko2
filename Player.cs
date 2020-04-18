@@ -1,4 +1,5 @@
-﻿using System.Drawing;
+﻿using System.Collections.Generic;
+using System.Drawing;
 
 namespace Oczko2
 {
@@ -6,6 +7,7 @@ namespace Oczko2
     {
         private int points;
         private int money;
+        private List<Card> hand;
 
         public Player()
         {
@@ -13,9 +15,14 @@ namespace Oczko2
             money = 100;
         }
 
-        public virtual void DrawCard() {}
-        public virtual void MoneyBet() {}
+        public virtual void DrawCard(Deck d) {}
 
-        
+        public virtual void Pass() {}
+
+        public virtual void DoubleDown() {}
+
+        public virtual void Split() {}
+
+
     }
 }

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Oczko2
 {
-    class Deck : Card
+    public class Deck : Card
     {
         List<Card> deck;
 
